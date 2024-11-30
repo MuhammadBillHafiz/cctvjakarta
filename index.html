@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemantauan CCTV Futuristik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Pemantauan CCTV</h1>
+      <p>Klik ikon CCTV untuk melihat video pemantauan di area tersebut.</p>
+    </header>
+
+    <main>
+      <!-- Google Map Container 1 -->
+      <h1>1. GBK (Gelora Bung Karno Stadium)</h1>
+      <div id="map-container">
+        <iframe
+          id="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3511836351686!2d106.79738022387023!3d-6.217334299690411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14bbe3a49a3%3A0x232777be4e4b23e8!2sStadion%20Madya%20Gelora%20Bung%20Karno!5e0!3m2!1sid!2sid!4v1732970089777!5m2!1sid!2sid"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <!-- Custom Markers with New Video Link -->
+        <div
+          class="cctv-marker"
+          style="top: 30px; left: 530px"
+          data-video="https://cctv.balitower.co.id/Gelora-017-700470_2/embed.html"
+          data-alamat="Gelora Bung Karno Senayan cctv 1, Jakarta Selatan"
+        ></div>
+        <div
+          class="cctv-marker"
+          style="top: 60px; left: 560px"
+          data-video="https://cctv.balitower.co.id/Gelora-017-700470_7/embed.html"
+          data-alamat="Gelora Bung Karno Senayan cctv 2, Jakarta Selatan"
+        ></div>
+      </div>
+      <!-- Google Map Container 2 -->
+      <h1>2. Bendungan Hilir (Depan Gedung DPR/MPR)</h1>
+      <div id="map-container">
+        <iframe
+          id="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1362.4172942867222!2d106.79870425994656!3d-6.208984169905115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f153a35426ef%3A0xf69c935a828d0d3d!2sGedung%20DPR%2FMPR%20RI!5e0!3m2!1sid!2sid!4v1732971205209!5m2!1sid!2sid"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <!-- Custom Markers with New Video Link -->
+        <div
+          class="cctv-marker"
+          style="top: 30px; left: 400px"
+          data-video="https://cctv.balitower.co.id/Bendungan-Hilir-003-700014_1/embed.html"
+          data-alamat="Jalan Gatot Subroto Depan Gedung DPR/MPR cctv 2, Jakarta Selatan"
+        ></div>
+        <div
+          class="cctv-marker"
+          style="top: 60px; left: 480px"
+          data-video="https://cctv.balitower.co.id/Bendungan-Hilir-003-700014_2/embed.html"
+          data-alamat="Depan Gedung DPR/MPR cctv 1, Jakarta Selatan"
+        ></div>
+      </div>
+      <!-- Google Map Container 3 -->
+      <h1>3. Pintu Air Manggarai</h1>
+      <div id="map-container">
+        <iframe
+          id="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1402.3409673500555!2d106.84815083565735!3d-6.208304856176015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f47194834bf3%3A0x8d2d0c5035756fa8!2sPintu%20Air%20Manggarai!5e0!3m2!1sid!2sid!4v1732975398398!5m2!1sid!2sid"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <!-- Custom Markers with New Video Link -->
+        <div
+          class="cctv-marker"
+          style="top: 70px; left: 610px"
+          data-video="https://cctv.balitower.co.id/Manggarai-Pintu-Air_1/embed.html?proto=hls"
+          data-alamat="Depan Pintu Air Manggarai, Jakarta Pusat"
+        ></div>
+      </div>
+    </main>
+
+    <!-- Popup Video -->
+    <div id="video-popup">
+      <span id="close-popup">&times;</span>
+      <iframe
+        id="video-src"
+        src=""
+        width="100%"
+        height="400"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <p id="alamat-cctv"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
